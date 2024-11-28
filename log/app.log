@@ -1,0 +1,83 @@
+2024-11-28 13:46:48,782 WARNING  * Debugger is active!
+2024-11-28 13:46:48,788 INFO  * Debugger PIN: 371-812-920
+2024-11-28 13:46:54,285 INFO 127.0.0.1 - - [28/Nov/2024 13:46:54] "GET /store HTTP/1.1" 200 -
+2024-11-28 13:47:26,765 INFO 127.0.0.1 - - [28/Nov/2024 13:47:26] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-28 13:47:40,599 INFO 127.0.0.1 - - [28/Nov/2024 13:47:40] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-28 13:47:41,839 INFO Event: Registration, User ID: 7340520, Details: User Ronnie registered with roll number 20211CCS0321
+2024-11-28 13:47:42,135 INFO 127.0.0.1 - - [28/Nov/2024 13:47:42] "[32mPOST /store HTTP/1.1[0m" 302 -
+2024-11-28 13:47:42,143 INFO 127.0.0.1 - - [28/Nov/2024 13:47:42] "GET /welcome/7340520 HTTP/1.1" 200 -
+2024-11-28 13:47:50,410 INFO 127.0.0.1 - - [28/Nov/2024 13:47:50] "GET /recognize HTTP/1.1" 200 -
+2024-11-28 13:48:02,672 INFO 127.0.0.1 - - [28/Nov/2024 13:48:02] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-28 13:48:14,291 INFO 127.0.0.1 - - [28/Nov/2024 13:48:14] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-28 13:48:16,633 INFO Event: Unauthorized Entry Attempt, User ID: 7340520, Details: Face data does not match
+2024-11-28 13:48:16,633 INFO 127.0.0.1 - - [28/Nov/2024 13:48:16] "POST /recognize HTTP/1.1" 200 -
+2024-11-28 13:50:06,879 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\utils\\voice_recognition.py', reloading
+2024-11-28 13:50:09,192 WARNING  * Debugger is active!
+2024-11-28 13:50:09,199 INFO  * Debugger PIN: 371-812-920
+2024-11-28 13:50:45,613 INFO 127.0.0.1 - - [28/Nov/2024 13:50:45] "GET /recognize HTTP/1.1" 200 -
+2024-11-28 13:50:47,019 INFO 127.0.0.1 - - [28/Nov/2024 13:50:47] "GET /recognize HTTP/1.1" 200 -
+2024-11-28 13:51:02,586 INFO 127.0.0.1 - - [28/Nov/2024 13:51:02] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-28 13:51:11,912 INFO 127.0.0.1 - - [28/Nov/2024 13:51:11] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-28 13:52:31,333 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-28 13:52:31,333 INFO [33mPress CTRL+C to quit[0m
+2024-11-28 13:52:31,335 INFO  * Restarting with stat
+2024-11-28 13:52:32,530 WARNING  * Debugger is active!
+2024-11-28 13:52:32,534 INFO  * Debugger PIN: 371-812-920
+2024-11-28 13:52:54,301 INFO 127.0.0.1 - - [28/Nov/2024 13:52:54] "GET / HTTP/1.1" 200 -
+2024-11-28 13:52:58,720 INFO 127.0.0.1 - - [28/Nov/2024 13:52:58] "GET /store HTTP/1.1" 200 -
+2024-11-28 13:53:11,109 INFO 127.0.0.1 - - [28/Nov/2024 13:53:11] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-28 13:53:20,306 INFO 127.0.0.1 - - [28/Nov/2024 13:53:20] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-28 13:53:21,493 INFO Event: Registration, User ID: 1814707, Details: User Ronnie registered with roll number 20211CCS0321
+2024-11-28 13:53:22,068 INFO 127.0.0.1 - - [28/Nov/2024 13:53:22] "[32mPOST /store HTTP/1.1[0m" 302 -
+2024-11-28 13:53:22,082 INFO 127.0.0.1 - - [28/Nov/2024 13:53:22] "GET /welcome/1814707 HTTP/1.1" 200 -
+2024-11-28 15:43:10,202 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-28 15:43:10,202 INFO [33mPress CTRL+C to quit[0m
+2024-11-28 15:43:10,204 INFO  * Restarting with stat
+2024-11-28 15:43:11,000 WARNING  * Debugger is active!
+2024-11-28 15:43:11,007 INFO  * Debugger PIN: 371-812-920
+2024-11-28 15:43:31,483 INFO 127.0.0.1 - - [28/Nov/2024 15:43:31] "GET / HTTP/1.1" 200 -
+2024-11-28 15:43:33,359 INFO 127.0.0.1 - - [28/Nov/2024 15:43:33] "GET /store HTTP/1.1" 200 -
+2024-11-28 15:43:44,532 INFO 127.0.0.1 - - [28/Nov/2024 15:43:44] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-28 15:43:53,508 INFO 127.0.0.1 - - [28/Nov/2024 15:43:53] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-28 15:43:55,317 INFO Event: Registration, User ID: 9316990, Details: User Ronnie registered with roll number 20211CCS0321
+2024-11-28 15:43:55,662 INFO 127.0.0.1 - - [28/Nov/2024 15:43:55] "[32mPOST /store HTTP/1.1[0m" 302 -
+2024-11-28 15:43:55,668 INFO 127.0.0.1 - - [28/Nov/2024 15:43:55] "GET /welcome?user_id=9316990&name=Ronnie&rollno=20211CCS0321 HTTP/1.1" 200 -
+2024-11-28 15:44:22,256 INFO 127.0.0.1 - - [28/Nov/2024 15:44:22] "GET /welcome?user_id=9316990&name=Ronnie&rollno=20211CCS0321 HTTP/1.1" 200 -
+2024-11-28 15:45:40,015 INFO 127.0.0.1 - - [28/Nov/2024 15:45:40] "GET /welcome?user_id=9316990&name=Ronnie&rollno=20211CCS0321 HTTP/1.1" 200 -
+2024-11-28 15:48:28,452 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\utils\\voice_recognition.py', reloading
+2024-11-28 15:48:29,008 INFO  * Restarting with stat
+2024-11-28 15:48:30,494 WARNING  * Debugger is active!
+2024-11-28 15:48:30,497 INFO  * Debugger PIN: 371-812-920
+2024-11-28 15:49:09,318 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\utils\\voice_recognition.py', reloading
+2024-11-28 15:49:09,794 INFO  * Restarting with stat
+2024-11-28 15:49:10,673 WARNING  * Debugger is active!
+2024-11-28 15:49:10,676 INFO  * Debugger PIN: 371-812-920
+2024-11-28 15:56:59,069 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\utils\\voice_recognition.py', reloading
+2024-11-28 15:56:59,551 INFO  * Restarting with stat
+2024-11-28 15:57:00,672 WARNING  * Debugger is active!
+2024-11-28 15:57:00,678 INFO  * Debugger PIN: 371-812-920
+2024-11-28 15:58:08,074 INFO 127.0.0.1 - - [28/Nov/2024 15:58:08] "GET /store HTTP/1.1" 200 -
+2024-11-28 15:58:09,329 INFO 127.0.0.1 - - [28/Nov/2024 15:58:09] "GET /store HTTP/1.1" 200 -
+2024-11-28 15:58:11,819 INFO 127.0.0.1 - - [28/Nov/2024 15:58:11] "GET /store HTTP/1.1" 200 -
+2024-11-28 15:58:13,007 INFO 127.0.0.1 - - [28/Nov/2024 15:58:13] "GET /store HTTP/1.1" 200 -
+2024-11-28 15:58:17,895 INFO 127.0.0.1 - - [28/Nov/2024 15:58:17] "GET /store HTTP/1.1" 200 -
+2024-11-28 15:58:57,096 INFO 127.0.0.1 - - [28/Nov/2024 15:58:57] "GET / HTTP/1.1" 200 -
+2024-11-28 15:58:58,235 INFO 127.0.0.1 - - [28/Nov/2024 15:58:58] "GET /store HTTP/1.1" 200 -
+2024-11-28 15:59:10,084 INFO 127.0.0.1 - - [28/Nov/2024 15:59:10] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-28 15:59:21,034 INFO 127.0.0.1 - - [28/Nov/2024 15:59:21] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-28 15:59:40,223 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\utils\\voice_recognition.py', reloading
+2024-11-28 15:59:40,697 INFO  * Restarting with stat
+2024-11-28 15:59:41,744 WARNING  * Debugger is active!
+2024-11-28 15:59:41,749 INFO  * Debugger PIN: 371-812-920
+2024-11-28 15:59:44,195 INFO 127.0.0.1 - - [28/Nov/2024 15:59:44] "GET /store HTTP/1.1" 200 -
+2024-11-28 16:03:49,934 INFO 127.0.0.1 - - [28/Nov/2024 16:03:49] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-28 16:03:55,507 INFO 127.0.0.1 - - [28/Nov/2024 16:03:55] "GET /store HTTP/1.1" 200 -
+2024-11-28 16:04:06,997 INFO 127.0.0.1 - - [28/Nov/2024 16:04:06] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-28 16:04:36,495 INFO 127.0.0.1 - - [28/Nov/2024 16:04:36] "GET /recognize HTTP/1.1" 200 -
+2024-11-28 16:05:04,987 INFO 127.0.0.1 - - [28/Nov/2024 16:05:04] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-28 16:05:14,682 INFO 127.0.0.1 - - [28/Nov/2024 16:05:14] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-28 16:08:15,637 INFO 127.0.0.1 - - [28/Nov/2024 16:08:15] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-28 16:08:22,118 INFO Event: Unauthorized Entry Attempt, User ID: 9316990, Details: Face data does not match
+2024-11-28 16:08:22,118 INFO 127.0.0.1 - - [28/Nov/2024 16:08:22] "POST /recognize HTTP/1.1" 200 -
