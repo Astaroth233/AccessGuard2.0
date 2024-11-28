@@ -50,7 +50,7 @@ def capture_voice_data():
                 voice_data = f.read()
             return voice_data
         else:
-            print("Keyword mismatch. Voice data not captured")
+            print("Keyword mismatch. Voice data not captured.")
             return None
     except sr.UnknownValueError:
         print("Google Speech Recognition could not understand audio")
