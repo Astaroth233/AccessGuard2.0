@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <h1 class="mt-5">Welcome</h1>
-        <div class="mt-5">
-            <a href="{{ url_for('store') }}" class="btn btn-primary">Store</a>
-            <a href="{{ url_for('recognize') }}" class="btn btn-secondary">Recognize</a>
-        </div>
+<!-- templates/index.html -->
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1 class="mt-5">Welcome</h1>
+    <div class="mt-5">
+        <a href="{{ url_for('store') }}" class="btn btn-primary">Store</a>
+        <a href="{{ url_for('recognize') }}" class="btn btn-secondary">Recognize</a>
     </div>
-</body>
-</html>
+{% endblock %}

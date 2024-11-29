@@ -1,15 +1,21 @@
 import os
 import logging
-from flask import Flask, render_template, request, redirect, url_for, jsonify
+from flask import Flask, render_template, request, redirect, url_for, jsonify, send_file
 from pymongo import MongoClient
 import random
 import base64
+import io
 from utils.encryption import encrypt_data, decrypt_data
-from utils.face_recognition import capture_face_data
-from utils.voice_recognition import capture_voice_data
+from utils.face_recognition import capture_face_data, calculate_similarity
+from utils.voice_recognition import capture_voice_data, calculate_voice_similarity
 from datetime import datetime
+import matplotlib
+matplotlib.use('Agg')  # Use 'Agg' backend for non-GUI environments
+import matplotlib.pyplot as plt
 
 app = Flask(__name__)
+
+similarity_scores = []
 
 # Set up logging
 log_directory = 'log'
@@ -34,6 +40,32 @@ def generate_unique_user_id():
 def create_log_entry(event, user_id, details=""):
     log_message = f"Event: {event}, User ID: {user_id}, Details: {details}"
     logging.info(log_message)
+
+def save_plot(user_id):
+    face_scores = [score[0] for score in similarity_scores]
+    voice_scores = [score[1] for score in similarity_scores]
+    
+    # Create the histogram plot
+    plt.figure(figsize=(10, 6))
+    plt.hist(face_scores, bins=10, alpha=0.5, label='Face Similarity')
+    plt.hist(voice_scores, bins=10, alpha=0.5, label='Voice Similarity')
+    plt.title('Distribution of Similarity Scores')
+    plt.xlabel('Similarity Score')
+    plt.ylabel('Frequency')
+    plt.legend(loc='upper right')
+    plt.grid(True)
+
+    # Ensure the 'plots' directory exists
+    plot_directory = os.path.join(os.getcwd(), 'plots')
+    if not os.path.exists(plot_directory):
+        os.makedirs(plot_directory)
+
+    # Save the plot in the 'plots' folder with user_id as filename
+    plot_path = os.path.join(plot_directory, f'{user_id}.png')
+    plt.savefig(plot_path)
+
+    # Provide feedback about plot location
+    logging.info(f"Plot saved at {plot_path}")
 
 @app.route('/')
 def index():
@@ -94,22 +126,36 @@ def recognize():
             encrypted_voice_data = user['voice_data']
             face_filename = decrypt_data(encrypted_face_data)
             voice_filename = decrypt_data(encrypted_voice_data)
-            
             stored_face_data = open(face_filename, 'rb').read()
             stored_voice_data = open(voice_filename, 'rb').read()
             
-            print(f"Retrieved Face Data Base64: {base64.b64encode(stored_face_data).decode('utf-8')}")
-            print(f"Retrieved Voice Data Base64: {base64.b64encode(stored_voice_data).decode('utf-8')}")
-            
-            if base64.b64encode(stored_face_data).decode('utf-8') != face_data:
-                create_log_entry("Unauthorized Entry Attempt", user_id, "Face data does not match")
-                return "Face data does not match. Unauthorized entry, Please register"
-            elif base64.b64encode(stored_voice_data).decode('utf-8') != voice_data:
-                create_log_entry("Unauthorized Entry Attempt", user_id, "Voice data does not match")
-                return "Voice data does not match. Unauthorized entry, Please register"
-            else:
-                create_log_entry("Successful Entry", user_id, "User successfully recognized")
+            similarity_percentage_face = calculate_similarity(face_filename, face_data) * 100
+            similarity_percentage_voice = calculate_voice_similarity(voice_filename, voice_data) * 100
+
+            print(f"Face Similarity Percentage: {similarity_percentage_face:.2f}%")
+            print(f"Voice Similarity Percentage: {similarity_percentage_voice:.2f}%")
+
+            similarity_scores.append((similarity_percentage_face, similarity_percentage_voice))
+
+            # Save plot after each recognize attempt with user_id as filename
+            save_plot(user_id)
+
+            # Define thresholds for acceptance
+            threshold_face = 85.0  # 85% threshold for face
+            threshold_voice = 85.0  # 85% threshold for voice
+
+            if similarity_percentage_face >= threshold_face and similarity_percentage_voice >= threshold_voice:
+                create_log_entry("Successful Entry", user_id, f"User recognized with {similarity_percentage_face:.2f}% face similarity and {similarity_percentage_voice:.2f}% voice similarity")
                 return redirect(url_for('welcome', user_id=user_id, name=user['name'], rollno=user['rollno']))
+            else:
+                if similarity_percentage_face < threshold_face and similarity_percentage_voice < threshold_voice:
+                    message = f"Face similarity {similarity_percentage_face:.2f}% is below the threshold, and Voice similarity {similarity_percentage_voice:.2f}% is below the threshold."
+                elif similarity_percentage_face < threshold_face:
+                    message = "Face does not match the data. Please register or Try Again."
+                elif similarity_percentage_voice < threshold_voice:
+                    message = "Voice does not match the data. Please register or Try Again."
+                create_log_entry("Unauthorized Entry Attempt", user_id, message)
+                return message
         else:
             create_log_entry("Unauthorized Entry Attempt", user_id, "User ID not found")
             return "User ID not found. Please register"

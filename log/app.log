@@ -87,3 +87,264 @@
 2024-11-29 15:47:57,016 INFO  * Restarting with stat
 2024-11-29 15:47:58,112 WARNING  * Debugger is active!
 2024-11-29 15:47:58,120 INFO  * Debugger PIN: 559-221-423
+2024-11-29 16:40:25,971 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 16:40:25,973 INFO [33mPress CTRL+C to quit[0m
+2024-11-29 16:40:25,975 INFO  * Restarting with stat
+2024-11-29 16:40:28,021 WARNING  * Debugger is active!
+2024-11-29 16:40:28,028 INFO  * Debugger PIN: 559-221-423
+2024-11-29 16:41:47,454 INFO 127.0.0.1 - - [29/Nov/2024 16:41:47] "GET / HTTP/1.1" 200 -
+2024-11-29 16:41:47,590 INFO 127.0.0.1 - - [29/Nov/2024 16:41:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-29 16:41:49,312 INFO 127.0.0.1 - - [29/Nov/2024 16:41:49] "GET /store HTTP/1.1" 200 -
+2024-11-29 16:42:20,984 INFO 127.0.0.1 - - [29/Nov/2024 16:42:20] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 16:42:32,180 INFO 127.0.0.1 - - [29/Nov/2024 16:42:32] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 16:42:43,496 INFO 127.0.0.1 - - [29/Nov/2024 16:42:43] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 16:42:55,335 INFO 127.0.0.1 - - [29/Nov/2024 16:42:55] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 16:43:15,302 INFO 127.0.0.1 - - [29/Nov/2024 16:43:15] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 16:43:28,912 INFO 127.0.0.1 - - [29/Nov/2024 16:43:28] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 16:43:30,525 INFO Event: Registration, User ID: 4485037, Details: User Roy registered with roll number 20211CSE0321
+2024-11-29 16:43:31,049 INFO 127.0.0.1 - - [29/Nov/2024 16:43:31] "[32mPOST /store HTTP/1.1[0m" 302 -
+2024-11-29 16:43:31,082 INFO 127.0.0.1 - - [29/Nov/2024 16:43:31] "GET /welcome?user_id=4485037&name=Roy&rollno=20211CSE0321 HTTP/1.1" 200 -
+2024-11-29 16:43:46,270 INFO 127.0.0.1 - - [29/Nov/2024 16:43:46] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 16:44:04,715 INFO 127.0.0.1 - - [29/Nov/2024 16:44:04] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 16:44:15,219 INFO 127.0.0.1 - - [29/Nov/2024 16:44:15] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 16:44:17,053 INFO Event: Unauthorized Entry Attempt, User ID: 4485037, Details: Face data does not match (Similarity: 0.00%)
+2024-11-29 16:44:17,053 INFO 127.0.0.1 - - [29/Nov/2024 16:44:17] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 16:49:11,058 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\utils\\face_recognition.py', reloading
+2024-11-29 16:49:11,650 INFO  * Restarting with stat
+2024-11-29 16:53:57,170 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 16:53:57,171 INFO [33mPress CTRL+C to quit[0m
+2024-11-29 16:53:57,174 INFO  * Restarting with stat
+2024-11-29 16:53:59,156 WARNING  * Debugger is active!
+2024-11-29 16:53:59,160 INFO  * Debugger PIN: 559-221-423
+2024-11-29 16:54:04,190 INFO 127.0.0.1 - - [29/Nov/2024 16:54:04] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 16:54:06,404 INFO 127.0.0.1 - - [29/Nov/2024 16:54:06] "GET / HTTP/1.1" 200 -
+2024-11-29 16:54:08,371 INFO 127.0.0.1 - - [29/Nov/2024 16:54:08] "GET /store HTTP/1.1" 200 -
+2024-11-29 16:54:33,975 INFO 127.0.0.1 - - [29/Nov/2024 16:54:33] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 16:54:41,300 INFO 127.0.0.1 - - [29/Nov/2024 16:54:41] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 16:54:44,220 INFO Event: Registration, User ID: 3150578, Details: User Raya registered with roll number 20221EEE0311
+2024-11-29 16:54:44,412 INFO 127.0.0.1 - - [29/Nov/2024 16:54:44] "[32mPOST /store HTTP/1.1[0m" 302 -
+2024-11-29 16:54:44,418 INFO 127.0.0.1 - - [29/Nov/2024 16:54:44] "GET /welcome?user_id=3150578&name=Raya&rollno=20221EEE0311 HTTP/1.1" 200 -
+2024-11-29 16:54:52,340 INFO 127.0.0.1 - - [29/Nov/2024 16:54:52] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 16:54:59,609 INFO 127.0.0.1 - - [29/Nov/2024 16:54:59] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 16:55:04,973 INFO 127.0.0.1 - - [29/Nov/2024 16:55:04] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 16:55:25,611 INFO Event: Unauthorized Entry Attempt, User ID: 3150578, Details: Face data does not match (Face Similarity: 66.12%), Voice data does not match (Voice Similarity: 99.92%)
+2024-11-29 16:55:25,612 INFO 127.0.0.1 - - [29/Nov/2024 16:55:25] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 16:56:48,282 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\app.py', reloading
+2024-11-29 16:56:49,285 INFO  * Restarting with stat
+2024-11-29 16:59:03,605 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 16:59:03,605 INFO [33mPress CTRL+C to quit[0m
+2024-11-29 16:59:03,607 INFO  * Restarting with stat
+2024-11-29 16:59:05,820 WARNING  * Debugger is active!
+2024-11-29 16:59:05,825 INFO  * Debugger PIN: 559-221-423
+2024-11-29 16:59:06,352 INFO 127.0.0.1 - - [29/Nov/2024 16:59:06] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 16:59:08,530 INFO 127.0.0.1 - - [29/Nov/2024 16:59:08] "GET / HTTP/1.1" 200 -
+2024-11-29 16:59:12,171 INFO 127.0.0.1 - - [29/Nov/2024 16:59:12] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 16:59:27,091 INFO 127.0.0.1 - - [29/Nov/2024 16:59:27] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 16:59:56,429 INFO 127.0.0.1 - - [29/Nov/2024 16:59:56] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:00:01,255 INFO Event: Unauthorized Entry Attempt, User ID: 4485037, Details: Face data does not match (Face Similarity: 0.00%), Voice data does not match (Voice Similarity: 99.82%)
+2024-11-29 17:00:01,255 INFO 127.0.0.1 - - [29/Nov/2024 17:00:01] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 17:00:16,251 INFO 127.0.0.1 - - [29/Nov/2024 17:00:16] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:00:24,891 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\app.py', reloading
+2024-11-29 17:00:25,618 INFO  * Restarting with stat
+2024-11-29 17:00:28,079 WARNING  * Debugger is active!
+2024-11-29 17:00:28,083 INFO  * Debugger PIN: 559-221-423
+2024-11-29 17:01:58,534 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\app.py', reloading
+2024-11-29 17:01:58,856 INFO  * Restarting with stat
+2024-11-29 17:06:09,745 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 17:06:09,746 INFO [33mPress CTRL+C to quit[0m
+2024-11-29 17:06:09,746 INFO  * Restarting with stat
+2024-11-29 17:06:11,946 WARNING  * Debugger is active!
+2024-11-29 17:06:11,952 INFO  * Debugger PIN: 559-221-423
+2024-11-29 17:06:12,469 INFO 127.0.0.1 - - [29/Nov/2024 17:06:12] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:06:14,494 INFO 127.0.0.1 - - [29/Nov/2024 17:06:14] "GET / HTTP/1.1" 200 -
+2024-11-29 17:06:16,109 INFO 127.0.0.1 - - [29/Nov/2024 17:06:16] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:06:24,817 INFO 127.0.0.1 - - [29/Nov/2024 17:06:24] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:06:51,019 INFO 127.0.0.1 - - [29/Nov/2024 17:06:51] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:06:55,508 INFO Event: Unauthorized Entry Attempt, User ID: 2523182, Details: Face similarity 54.11% is below the threshold.
+2024-11-29 17:06:55,508 INFO 127.0.0.1 - - [29/Nov/2024 17:06:55] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 17:09:10,096 INFO Event: Unauthorized Entry Attempt, User ID: 2523182, Details: Face similarity 54.11% is below the threshold.
+2024-11-29 17:09:10,096 INFO 127.0.0.1 - - [29/Nov/2024 17:09:10] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 17:09:17,314 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\app.py', reloading
+2024-11-29 17:09:18,021 INFO  * Restarting with stat
+2024-11-29 17:09:20,283 WARNING  * Debugger is active!
+2024-11-29 17:09:20,287 INFO  * Debugger PIN: 559-221-423
+2024-11-29 17:09:24,314 INFO Event: Unauthorized Entry Attempt, User ID: 2523182, Details: Face does not match the data. Please register or Try Again.
+2024-11-29 17:09:24,315 INFO 127.0.0.1 - - [29/Nov/2024 17:09:24] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 17:10:52,824 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\app.py', reloading
+2024-11-29 17:10:53,168 INFO  * Restarting with stat
+2024-11-29 17:10:55,618 WARNING  * Debugger is active!
+2024-11-29 17:10:55,623 INFO  * Debugger PIN: 559-221-423
+2024-11-29 17:11:00,277 INFO 127.0.0.1 - - [29/Nov/2024 17:11:00] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:11:14,463 INFO 127.0.0.1 - - [29/Nov/2024 17:11:14] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:11:31,706 INFO 127.0.0.1 - - [29/Nov/2024 17:11:31] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:11:36,381 INFO Event: Unauthorized Entry Attempt, User ID: 2523182, Details: Face does not match the data. Please register or Try Again.
+2024-11-29 17:11:36,381 INFO 127.0.0.1 - - [29/Nov/2024 17:11:36] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 17:17:07,488 INFO 127.0.0.1 - - [29/Nov/2024 17:17:07] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:17:10,178 INFO 127.0.0.1 - - [29/Nov/2024 17:17:10] "GET / HTTP/1.1" 200 -
+2024-11-29 17:17:12,255 INFO 127.0.0.1 - - [29/Nov/2024 17:17:12] "GET /store HTTP/1.1" 200 -
+2024-11-29 17:17:33,517 INFO 127.0.0.1 - - [29/Nov/2024 17:17:33] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:18:50,187 INFO 127.0.0.1 - - [29/Nov/2024 17:18:50] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:18:54,227 INFO Event: Registration, User ID: 9559061, Details: User Rico registered with roll number 20211ECE0445
+2024-11-29 17:18:54,438 INFO 127.0.0.1 - - [29/Nov/2024 17:18:54] "[32mPOST /store HTTP/1.1[0m" 302 -
+2024-11-29 17:18:54,447 INFO 127.0.0.1 - - [29/Nov/2024 17:18:54] "GET /welcome?user_id=9559061&name=Rico&rollno=20211ECE0445 HTTP/1.1" 200 -
+2024-11-29 17:18:59,490 INFO 127.0.0.1 - - [29/Nov/2024 17:18:59] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:19:09,094 INFO 127.0.0.1 - - [29/Nov/2024 17:19:09] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:19:11,269 INFO 127.0.0.1 - - [29/Nov/2024 17:19:11] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:19:56,932 INFO 127.0.0.1 - - [29/Nov/2024 17:19:56] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:20:07,009 INFO Event: Unauthorized Entry Attempt, User ID: 9559061, Details: Face does not match the data. Please register or Try Again.
+2024-11-29 17:20:07,009 INFO 127.0.0.1 - - [29/Nov/2024 17:20:07] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 17:23:20,446 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\utils\\face_recognition.py', reloading
+2024-11-29 17:23:21,319 INFO  * Restarting with stat
+2024-11-29 17:23:49,353 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 17:23:49,354 INFO [33mPress CTRL+C to quit[0m
+2024-11-29 17:23:49,356 INFO  * Restarting with stat
+2024-11-29 17:23:51,543 WARNING  * Debugger is active!
+2024-11-29 17:23:51,547 INFO  * Debugger PIN: 559-221-423
+2024-11-29 17:23:51,660 INFO 127.0.0.1 - - [29/Nov/2024 17:23:51] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:23:56,197 INFO 127.0.0.1 - - [29/Nov/2024 17:23:56] "GET /store HTTP/1.1" 200 -
+2024-11-29 17:24:06,488 INFO 127.0.0.1 - - [29/Nov/2024 17:24:06] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:24:17,018 INFO 127.0.0.1 - - [29/Nov/2024 17:24:17] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:24:19,175 INFO Event: Registration, User ID: 5083390, Details: User Rico registered with roll number 20211ECE0445
+2024-11-29 17:24:19,379 INFO 127.0.0.1 - - [29/Nov/2024 17:24:19] "[32mPOST /store HTTP/1.1[0m" 302 -
+2024-11-29 17:24:19,388 INFO 127.0.0.1 - - [29/Nov/2024 17:24:19] "GET /welcome?user_id=5083390&name=Rico&rollno=20211ECE0445 HTTP/1.1" 200 -
+2024-11-29 17:24:25,060 INFO 127.0.0.1 - - [29/Nov/2024 17:24:25] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:24:33,538 INFO 127.0.0.1 - - [29/Nov/2024 17:24:33] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:24:38,988 INFO 127.0.0.1 - - [29/Nov/2024 17:24:38] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:24:44,186 INFO Event: Unauthorized Entry Attempt, User ID: 5083390, Details: Face does not match the data. Please register or Try Again.
+2024-11-29 17:24:44,186 INFO 127.0.0.1 - - [29/Nov/2024 17:24:44] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 17:26:21,818 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\app.py', reloading
+2024-11-29 17:26:22,391 INFO  * Restarting with stat
+2024-11-29 17:35:35,818 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 17:35:35,819 INFO [33mPress CTRL+C to quit[0m
+2024-11-29 17:35:35,821 INFO  * Restarting with stat
+2024-11-29 17:35:38,455 WARNING  * Debugger is active!
+2024-11-29 17:35:38,463 INFO  * Debugger PIN: 559-221-423
+2024-11-29 17:35:38,705 INFO 127.0.0.1 - - [29/Nov/2024 17:35:38] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:35:41,295 INFO 127.0.0.1 - - [29/Nov/2024 17:35:41] "GET /store HTTP/1.1" 200 -
+2024-11-29 17:35:42,503 INFO 127.0.0.1 - - [29/Nov/2024 17:35:42] "GET /store HTTP/1.1" 200 -
+2024-11-29 17:35:46,308 INFO 127.0.0.1 - - [29/Nov/2024 17:35:46] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:35:56,415 INFO 127.0.0.1 - - [29/Nov/2024 17:35:56] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:36:02,511 INFO 127.0.0.1 - - [29/Nov/2024 17:36:02] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:36:08,374 INFO Event: Unauthorized Entry Attempt, User ID: 4485037, Details: Face does not match the data. Please register or Try Again.
+2024-11-29 17:36:08,374 INFO 127.0.0.1 - - [29/Nov/2024 17:36:08] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 17:36:38,049 INFO 127.0.0.1 - - [29/Nov/2024 17:36:38] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:37:46,383 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\app.py', reloading
+2024-11-29 17:37:47,242 INFO  * Restarting with stat
+2024-11-29 17:37:49,960 WARNING  * Debugger is active!
+2024-11-29 17:37:49,964 INFO  * Debugger PIN: 559-221-423
+2024-11-29 17:37:52,290 INFO 127.0.0.1 - - [29/Nov/2024 17:37:52] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:39:26,913 INFO 127.0.0.1 - - [29/Nov/2024 17:39:26] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:39:46,477 INFO 127.0.0.1 - - [29/Nov/2024 17:39:46] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:39:51,268 INFO Event: Unauthorized Entry Attempt, User ID: 9316990, Details: Face does not match the data. Please register or Try Again.
+2024-11-29 17:39:51,269 INFO 127.0.0.1 - - [29/Nov/2024 17:39:51] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 17:42:37,461 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\app.py', reloading
+2024-11-29 17:42:38,074 INFO  * Restarting with stat
+2024-11-29 17:42:40,913 WARNING  * Debugger is active!
+2024-11-29 17:42:40,917 INFO  * Debugger PIN: 559-221-423
+2024-11-29 17:42:42,286 INFO 127.0.0.1 - - [29/Nov/2024 17:42:42] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:42:47,649 INFO 127.0.0.1 - - [29/Nov/2024 17:42:47] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:43:20,226 INFO 127.0.0.1 - - [29/Nov/2024 17:43:20] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:43:24,914 INFO Event: Unauthorized Entry Attempt, User ID: 9316990, Details: Face does not match the data. Please register or Try Again.
+2024-11-29 17:43:24,914 INFO 127.0.0.1 - - [29/Nov/2024 17:43:24] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 17:46:54,460 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\app.py', reloading
+2024-11-29 17:46:55,214 INFO  * Restarting with stat
+2024-11-29 17:46:58,126 WARNING  * Debugger is active!
+2024-11-29 17:46:58,131 INFO  * Debugger PIN: 559-221-423
+2024-11-29 17:46:58,377 INFO 127.0.0.1 - - [29/Nov/2024 17:46:58] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:47:02,993 INFO 127.0.0.1 - - [29/Nov/2024 17:47:02] "GET / HTTP/1.1" 200 -
+2024-11-29 17:47:04,358 INFO 127.0.0.1 - - [29/Nov/2024 17:47:04] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:47:06,056 INFO 127.0.0.1 - - [29/Nov/2024 17:47:06] "GET /store HTTP/1.1" 200 -
+2024-11-29 17:47:22,055 INFO 127.0.0.1 - - [29/Nov/2024 17:47:22] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:47:42,336 INFO 127.0.0.1 - - [29/Nov/2024 17:47:42] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:47:46,835 INFO Event: Registration, User ID: 9409970, Details: User Liko registered with roll number 212
+2024-11-29 17:47:46,999 INFO 127.0.0.1 - - [29/Nov/2024 17:47:46] "[32mPOST /store HTTP/1.1[0m" 302 -
+2024-11-29 17:47:47,006 INFO 127.0.0.1 - - [29/Nov/2024 17:47:47] "GET /welcome?user_id=9409970&name=Liko&rollno=212 HTTP/1.1" 200 -
+2024-11-29 17:47:52,897 INFO 127.0.0.1 - - [29/Nov/2024 17:47:52] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:48:01,726 INFO 127.0.0.1 - - [29/Nov/2024 17:48:01] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:48:09,557 INFO 127.0.0.1 - - [29/Nov/2024 17:48:09] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:48:13,168 INFO Event: Unauthorized Entry Attempt, User ID: 9409970, Details: Face does not match the data. Please register or Try Again.
+2024-11-29 17:48:13,168 INFO 127.0.0.1 - - [29/Nov/2024 17:48:13] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 17:49:21,897 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\app.py', reloading
+2024-11-29 17:49:22,610 INFO  * Restarting with stat
+2024-11-29 17:49:25,362 WARNING  * Debugger is active!
+2024-11-29 17:49:25,367 INFO  * Debugger PIN: 559-221-423
+2024-11-29 17:49:31,521 INFO Event: Unauthorized Entry Attempt, User ID: 9409970, Details: Face does not match the data. Please register or Try Again.
+2024-11-29 17:49:31,522 INFO 127.0.0.1 - - [29/Nov/2024 17:49:31] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 17:49:32,429 INFO 127.0.0.1 - - [29/Nov/2024 17:49:32] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:49:39,850 INFO 127.0.0.1 - - [29/Nov/2024 17:49:39] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:49:56,828 INFO 127.0.0.1 - - [29/Nov/2024 17:49:56] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:50:01,817 INFO Event: Unauthorized Entry Attempt, User ID: 9409970, Details: Face does not match the data. Please register or Try Again.
+2024-11-29 17:50:01,818 INFO 127.0.0.1 - - [29/Nov/2024 17:50:01] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 17:53:40,473 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\app.py', reloading
+2024-11-29 17:53:41,058 INFO  * Restarting with stat
+2024-11-29 17:53:43,877 WARNING  * Debugger is active!
+2024-11-29 17:53:43,882 INFO  * Debugger PIN: 559-221-423
+2024-11-29 17:53:45,392 INFO 127.0.0.1 - - [29/Nov/2024 17:53:45] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:53:46,627 INFO 127.0.0.1 - - [29/Nov/2024 17:53:46] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:53:48,619 INFO 127.0.0.1 - - [29/Nov/2024 17:53:48] "GET /store HTTP/1.1" 200 -
+2024-11-29 17:53:52,637 INFO 127.0.0.1 - - [29/Nov/2024 17:53:52] "[33mGET /capture_face_data HTTP/1.1[0m" 404 -
+2024-11-29 17:53:59,756 INFO 127.0.0.1 - - [29/Nov/2024 17:53:59] "[33mGET /capture_face_data HTTP/1.1[0m" 404 -
+2024-11-29 17:54:03,355 INFO 127.0.0.1 - - [29/Nov/2024 17:54:03] "[33mGET /capture_face_data HTTP/1.1[0m" 404 -
+2024-11-29 17:54:08,537 INFO 127.0.0.1 - - [29/Nov/2024 17:54:08] "[33mGET /capture_face_data HTTP/1.1[0m" 404 -
+2024-11-29 17:54:20,092 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\app.py', reloading
+2024-11-29 17:54:20,780 INFO  * Restarting with stat
+2024-11-29 17:54:23,377 WARNING  * Debugger is active!
+2024-11-29 17:54:23,384 INFO  * Debugger PIN: 559-221-423
+2024-11-29 17:54:26,766 INFO 127.0.0.1 - - [29/Nov/2024 17:54:26] "GET /store HTTP/1.1" 200 -
+2024-11-29 17:54:35,266 INFO 127.0.0.1 - - [29/Nov/2024 17:54:35] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:54:46,222 INFO 127.0.0.1 - - [29/Nov/2024 17:54:46] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:54:50,861 INFO Event: Registration, User ID: 4488769, Details: User Rohan registered with roll number 20211CSE0233
+2024-11-29 17:54:51,012 INFO 127.0.0.1 - - [29/Nov/2024 17:54:51] "[32mPOST /store HTTP/1.1[0m" 302 -
+2024-11-29 17:54:51,019 INFO 127.0.0.1 - - [29/Nov/2024 17:54:51] "GET /welcome?user_id=4488769&name=Rohan&rollno=20211CSE0233 HTTP/1.1" 200 -
+2024-11-29 17:54:59,853 INFO 127.0.0.1 - - [29/Nov/2024 17:54:59] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:55:07,051 INFO 127.0.0.1 - - [29/Nov/2024 17:55:07] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:55:12,743 INFO 127.0.0.1 - - [29/Nov/2024 17:55:12] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:55:18,461 INFO Event: Unauthorized Entry Attempt, User ID: 4488769, Details: Face does not match the data. Please register or Try Again.
+2024-11-29 17:55:18,461 INFO 127.0.0.1 - - [29/Nov/2024 17:55:18] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 17:56:19,289 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\app.py', reloading
+2024-11-29 17:56:20,392 INFO  * Restarting with stat
+2024-11-29 17:56:23,415 WARNING  * Debugger is active!
+2024-11-29 17:56:23,420 INFO  * Debugger PIN: 559-221-423
+2024-11-29 17:56:23,545 INFO 127.0.0.1 - - [29/Nov/2024 17:56:23] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:56:24,949 INFO 127.0.0.1 - - [29/Nov/2024 17:56:24] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:56:33,579 INFO 127.0.0.1 - - [29/Nov/2024 17:56:33] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:57:28,441 INFO 127.0.0.1 - - [29/Nov/2024 17:57:28] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:57:33,182 INFO Plot saved at C:\Sem 7\Capstone\project\fyp2\plots\similarity_scores.png
+2024-11-29 17:57:33,182 INFO Event: Unauthorized Entry Attempt, User ID: 2523182, Details: Face does not match the data. Please register or Try Again.
+2024-11-29 17:57:33,183 INFO 127.0.0.1 - - [29/Nov/2024 17:57:33] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 17:59:17,399 INFO  * Detected change in 'C:\\Sem 7\\Capstone\\project\\fyp2\\app.py', reloading
+2024-11-29 17:59:19,422 INFO  * Restarting with stat
+2024-11-29 17:59:22,054 WARNING  * Debugger is active!
+2024-11-29 17:59:22,059 INFO  * Debugger PIN: 559-221-423
+2024-11-29 17:59:22,170 INFO 127.0.0.1 - - [29/Nov/2024 17:59:22] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:59:23,451 INFO 127.0.0.1 - - [29/Nov/2024 17:59:23] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:59:25,398 INFO 127.0.0.1 - - [29/Nov/2024 17:59:25] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 17:59:33,048 INFO 127.0.0.1 - - [29/Nov/2024 17:59:33] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 17:59:54,018 INFO 127.0.0.1 - - [29/Nov/2024 17:59:54] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 17:59:58,824 INFO Plot saved at C:\Sem 7\Capstone\project\fyp2\plots\2523182.png
+2024-11-29 17:59:58,824 INFO Event: Unauthorized Entry Attempt, User ID: 2523182, Details: Face does not match the data. Please register or Try Again.
+2024-11-29 17:59:58,825 INFO 127.0.0.1 - - [29/Nov/2024 17:59:58] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 18:01:22,155 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 18:01:22,155 INFO [33mPress CTRL+C to quit[0m
+2024-11-29 18:01:22,156 INFO  * Restarting with stat
+2024-11-29 18:01:25,181 WARNING  * Debugger is active!
+2024-11-29 18:01:25,186 INFO  * Debugger PIN: 559-221-423
+2024-11-29 18:01:25,320 INFO 127.0.0.1 - - [29/Nov/2024 18:01:25] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 18:01:26,233 INFO 127.0.0.1 - - [29/Nov/2024 18:01:26] "GET /welcome?user_id=4488769&name=Rohan&rollno=20211CSE0233 HTTP/1.1" 200 -
+2024-11-29 18:01:28,670 INFO 127.0.0.1 - - [29/Nov/2024 18:01:28] "GET /welcome?user_id=4488769&name=Rohan&rollno=20211CSE0233 HTTP/1.1" 200 -
+2024-11-29 18:01:28,887 INFO 127.0.0.1 - - [29/Nov/2024 18:01:28] "GET /welcome?user_id=4488769&name=Rohan&rollno=20211CSE0233 HTTP/1.1" 200 -
+2024-11-29 18:01:29,910 INFO 127.0.0.1 - - [29/Nov/2024 18:01:29] "GET /store HTTP/1.1" 200 -
+2024-11-29 18:01:31,216 INFO 127.0.0.1 - - [29/Nov/2024 18:01:31] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 18:01:32,789 INFO 127.0.0.1 - - [29/Nov/2024 18:01:32] "GET /recognize HTTP/1.1" 200 -
+2024-11-29 18:01:40,590 INFO 127.0.0.1 - - [29/Nov/2024 18:01:40] "GET /capture_face_data HTTP/1.1" 200 -
+2024-11-29 18:01:51,505 INFO 127.0.0.1 - - [29/Nov/2024 18:01:51] "GET /capture_voice_data HTTP/1.1" 200 -
+2024-11-29 18:01:56,047 INFO Plot saved at C:\Sem 7\Capstone\project\fyp2\plots\2523182.png
+2024-11-29 18:01:56,047 INFO Event: Unauthorized Entry Attempt, User ID: 2523182, Details: Face does not match the data. Please register or Try Again.
+2024-11-29 18:01:56,047 INFO 127.0.0.1 - - [29/Nov/2024 18:01:56] "POST /recognize HTTP/1.1" 200 -

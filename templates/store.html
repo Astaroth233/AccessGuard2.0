@@ -1,49 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store Information</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <h1 class="mt-5">Store Information</h1>
-        <form method="POST" id="storeForm">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" name="name" required>
+<!-- templates/store.html -->
+{% extends "base.html" %}
+
+{% block title %}Store Information{% endblock %}
+
+{% block content %}
+    <h1 class="mt-5">Store Information</h1>
+    <form method="POST" id="storeForm">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="rollno">Roll Number</label>
+            <input type="text" class="form-control" id="rollno" name="rollno" required>
+        </div>
+        <div class="form-group">
+            <label for="semester">Semester</label>
+            <input type="text" class="form-control" id="semester" name="semester" required>
+        </div>
+        <div class="form-group">
+            <label for="face_data">Face Data</label>
+            <div>
+                <button type="button" class="btn btn-secondary" onclick="captureFaceData()">Capture Face</button>
+                <span id="faceStatus"></span>
             </div>
-            <div class="form-group">
-                <label for="rollno">Roll Number</label>
-                <input type="text" class="form-control" id="rollno" name="rollno" required>
+            <input type="hidden" id="face_data" name="face_data">
+        </div>
+        <div class="form-group">
+            <label for="voice_data">Voice Data</label>
+            <div>
+                <button type="button" class="btn btn-secondary" onclick="captureVoiceData()">Capture Voice</button>
+                <span id="voiceStatus"></span>
             </div>
-            <div class="form-group">
-                <label for="semester">Semester</label>
-                <input type="text" class="form-control" id="semester" name="semester" required>
-            </div>
-            <div class="form-group">
-                <label for="face_data">Face Data</label>
-                <div>
-                    <button type="button" class="btn btn-secondary" onclick="captureFaceData()">Capture Face</button>
-                    <span id="faceStatus"></span>
-                </div>
-                <input type="hidden" id="face_data" name="face_data">
-            </div>
-            <div class="form-group">
-                <label for="voice_data">Voice Data</label>
-                <div>
-                    <button type="button" class="btn btn-secondary" onclick="captureVoiceData()">Capture Voice</button>
-                    <span id="voiceStatus"></span>
-                </div>
-                <input type="hidden" id="voice_data" name="voice_data">
-            </div>
-            <div id="voicePreview" class="alert alert-info" style="display: none;">
-                Recording voice...
-            </div>
-            <button type="submit" class="btn btn-primary" id="submitButton" disabled>Submit</button>
-        </form>
-    </div>
+            <input type="hidden" id="voice_data" name="voice_data">
+        </div>
+        <div id="voicePreview" class="alert alert-info" style="display: none;">
+            Recording voice...
+        </div>
+        <button type="submit" class="btn btn-primary" id="submitButton" disabled>Submit</button>
+    </form>
     <script>
         function captureFaceData() {
             const faceDataInput = document.getElementById('face_data');
@@ -90,5 +85,4 @@
             }
         }
     </script>
-</body>
-</html>
+{% endblock %}
