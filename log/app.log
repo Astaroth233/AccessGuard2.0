@@ -81,3 +81,9 @@
 2024-11-28 16:08:15,637 INFO 127.0.0.1 - - [28/Nov/2024 16:08:15] "GET /capture_voice_data HTTP/1.1" 200 -
 2024-11-28 16:08:22,118 INFO Event: Unauthorized Entry Attempt, User ID: 9316990, Details: Face data does not match
 2024-11-28 16:08:22,118 INFO 127.0.0.1 - - [28/Nov/2024 16:08:22] "POST /recognize HTTP/1.1" 200 -
+2024-11-29 15:47:57,012 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-29 15:47:57,012 INFO [33mPress CTRL+C to quit[0m
+2024-11-29 15:47:57,016 INFO  * Restarting with stat
+2024-11-29 15:47:58,112 WARNING  * Debugger is active!
+2024-11-29 15:47:58,120 INFO  * Debugger PIN: 559-221-423
